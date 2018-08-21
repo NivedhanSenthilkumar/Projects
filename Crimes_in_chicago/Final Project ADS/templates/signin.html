@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Crimes In Chicago App</title>
+ 
+    
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+    <link href="../static/signup.css" rel="stylesheet">
+    
+     <style type="text/css">
+     body{
+        background-image: url("https://pointersviewpoint.files.wordpress.com/2010/08/crime.jpg")
+     }
+ </style>
+  </head>
+ 
+  <body>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+ 
+    <div class="container">
+        <div class="header">
+            <nav >
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation" ><a class="btn btn-danger" href="/">Home  </a>
+					&nbsp; &nbsp; &nbsp; &nbsp;
+                    </li>
+                    <li role="presentation"><a class="btn btn-danger" href="#">Sign In  </a>
+					&nbsp; &nbsp; &nbsp; &nbsp;
+                    </li>
+                    <li role="presentation  class="active"><a class="btn btn-danger" href="/showSignUp/">Sign Up </a>
+					&nbsp; &nbsp; &nbsp; &nbsp;
+                    </li>
+                </ul>
+            </nav>
+	</div>
+
+		</div>
+     <br>
+      <div class="jumbotron">
+        <h1>Crimes In Chicago App</h1>
+        <form class="form-signin" action="/signIn_Police/" method="POST">
+        <lable>Who Are you?</lable>
+        <br>
+      <select class="form-control" name="role">
+        <option class="form-control" value="Police">Chicago Police</option>
+        <option class="form-control" value="User">Citizen</option>
+      </select>
+    <br>
+      <label for="inputName" class="sr-only">Name</label>
+        <input type="name" name="inputName" id="inputName" class="form-control" placeholder="Name" required autofocus>
+    <br>
+        <label for="inputEmail" class="sr-only">Username</label>
+        <input type="email" name="inputEmail" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+		<br>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" name="inputPassword" id="inputPassword" class="form-control" placeholder="Password" required>
+         
+        <button id="btnSignUp" class="btn btn-lg btn-primary btn-block" type="submit">Sign In</button>
+      </form>
+      {% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for  message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %} 
+
+      </div>
+ <br>
+     <br>  
+ <br>
+      <footer class="footer">
+        <p>&copy; Team 8</p>
+      </footer>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <title>Crimes in Chicago App</title>
+ 
+ 
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+ 
+ 
+</head>
+<nav>
+	    <div class="container">
+        <div class="header">
+            <br>
+            <br>
+	<ul class="nav nav-pills pull-right">
+                    <li role="presentation" class="active"><a href="/">Log Out  </a>
+					&nbsp; &nbsp; &nbsp; &nbsp;
+                    </li>
+        </ul>
+    </div>
+</div>
+</nav>
+<div  class = "container">
+<br><br>
+
+ <h4>
+ 	Hello,This application allows you to choose the best district for you to live in chicago.
+</h4>
+<br> 
+<br>
+<h4>
+ 	Please Select the District Number:
+
+</h4>
+</div>
+<br>
+<br>
+ <div class="jumbotron" align="center">
+ 	<form class="form-signin" action = "/safedistrict/" , method= "POST">
+    <label>District Name: </label>
+    <select placeholder = "District" class="form-control" name="District" required>
+    <option value="1">Central</option>
+    <option value="2">Wentworth</option>
+    <option value="3">Grand Crossing</option>
+    <option value="4">South Chicago</option>
+    <option value="5">Calumate</option>
+    <option value="6">Greshan</option>
+    <option value="7">EngleWood</option>
+    <option value="8">Chicago Lawn</option>
+    <option value="9">Deering</option>
+    <option value="10">Ogden</option>
+    <option value="11">Harrison</option>
+    <option value="12">Near West</option>
+    <option value="14">Shakespeare</option>
+    <option value="15">Austin</option>
+    <option value="16">Jefferson Park</option>
+    <option value="17">Albany Park</option>
+    <option value="18">Near North</option>
+    <option value="19">Town Hall</option>
+    <option value="20">Lincoln</option>
+    <option value="21">Morgan Park</option>
+    <option value="22">Rogers Park</option>
+    <option value="23">Grand Central</option>
+  </select>
+  <br>
+       	<button id="btnSignUp" class="btn btn-primary" type="submit"">Submit</button>
+    </form>
+    <br>
+    <br>
+  {% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for  message in messages %}
+      <h4 style="color: purple">
+        <script type="text/javascript">
+            alert("{{message}}")
+        </script>
+      <i><li>{{ message }}</li></i>
+      </h4>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %} 
+</div>
+
+

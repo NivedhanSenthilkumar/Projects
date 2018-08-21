@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <title>Crimes in Chicago App</title>
+ 
+ 
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+ 
+<style type="text/css">
+     body{
+        background-image: url("https://pointersviewpoint.files.wordpress.com/2010/08/crime.jpg")
+     }
+ </style>
+</head>
+ 
+<body>
+    
+    <div class="container">
+        <div class="header">
+            <br>
+            <br>
+                        <nav >
+                <br>
+                <br>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation" class="btn btn-danger"><a class="btn btn-danger" href="/"> Log Out  </a>
+          &nbsp; &nbsp; &nbsp; &nbsp;
+                    </li>
+                    <li role="presentation">
+
+                    <form action="/fill_form/" method="POST">
+    <button class="btn btn-danger" type="submit" name= "Send_Email"  value="Send_Email">Check Crime Status</button>
+                       &nbsp; &nbsp; &nbsp; &nbsp;
+                      </form>
+                    </li>
+                    <li role="presentation">
+                </ul>
+            </nav>
+            <br>
+            <br>
+
+                    
+
+	</div>	
+		</div>
+
+
+      <div  class="jumbotron">
+
+        <div align="center"> 
+          <h1 align="center">Crimes In Chicago App</h1>
+        <br>
+        <br>
+        <br>
+        <form action="/graph/" , method="POST">
+        <label>
+          Choose The EDA Options 
+        </label>
+        <select name="EDA">
+        <option value= "Primary Type" >Primary Type</option>
+        <option value="Location Description">Location Description</option>
+        <option value="Week">Number of Crimes by day of the week</option>
+        <option value="Month">Number of Crimes by day of the Month</option>
+        <option value="cpm">Number of crimes per month</option>
+        <option value="cpm1">Crimes Seperated by types and its occurance in the years</option>
+        </select>
+  <input type="submit" class="btn btn-primary" value="Submit">
+</form>
+    </div>
+
+      {% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for  message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %} 
+
+      </div>
+ <br>
+     <br>  
+ <br>
+
+
+
+      <footer align="center" class="footer">
+        <h2><p>&copy; Team 8</p></h2>
+      </footer>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+
+<body>
+</br>
+</br>
+ <link href="{{ url_for('static', filename= 'css/bootstrap.min.css')}}" rel= "stylesheet">
+<!--<link rel="shortcut icon"  href="{{ url_for('static' , filename= 'todo.json')}}" >'-->
+ </script>
+<form action="/Prediction_CSV/" method="POST"  enctype = "multipart/form-data">
+<div class="container">
+ <div class="form-group">
+    <label for="exampleInputFile">Choose CSV File</label>
+    <p>
+	<input type="file" id="fileInput" name="filename" value="{{request.form.filename}}">
+	</p>
+  </div>
+ </br>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</div>
+      {% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for  message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+
+ </br>
+</body>
