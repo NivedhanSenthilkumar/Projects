@@ -1,0 +1,26 @@
+todo = [
+	{
+		"title": "Buy Fruits",
+		"todo_item":["Apples, Oranges, Veggies"],
+		"author": "Shantanu",
+		"date": "2/21/2018"
+	},
+	{	
+		"title": "Buy Medicines",
+		"todo_item":[ "Ibuprofen, Advil, Vicks"],
+		"author": "Deepak",
+		"date": "2/22/2018"
+	},
+	{
+		"title": "Buy Groceries",
+		"todo_item":["Salt, Cooking oil, vinegar, cheese, pancake"],
+		"author": "Shantanu",
+		"date": "2/23/2018"
+	},
+	{	
+		"title": "Buy Fruits",
+		"todo_item":[ "Cherry, Banana, strawberry"],
+		"author": "Dpk",
+		"date": "2/23/2018"
+	}
+]
