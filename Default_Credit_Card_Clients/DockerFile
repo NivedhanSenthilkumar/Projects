@@ -1,0 +1,30 @@
+FROM python:latest
+RUN mkdir -p /Users/mehta/Desktop/Assignment3/assignment3_Part2
+WORKDIR /Users/mehta/Desktop/Assignment3/assignment3_Part2
+
+RUN mkdir -p static
+RUN mkdir -p templates
+
+
+ADD app.py /app.py 
+ADD static/ /static/
+ADD templates/ /templates/
+
+Run pip3 install flask
+Run pip3 install pandas
+Run pip3 install boto
+Run pip3 install boto3
+Run pip3 install requests
+Run pip3 install bs4
+Run pip3 install matplotlib
+Run pip3 install seaborn
+Run pip3 install numpy
+Run pip3 install xlrd
+Run pip3 install imblearn
+Run pip3 install sklearn
+Run pip3 install wget
+
+EXPOSE 5000
+EXPOSE 80
+CMD ["sh","-c","./app.py"]
+ENTRYPOINT  ["python","/app.py"]

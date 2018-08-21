@@ -1,0 +1,18 @@
+<body>
+<div class="container">
+</br>
+</br>
+<h3 style="color: blue">
+	Choose Options from below to send the data
+</h3>
+ <link href="{{ url_for('static', filename= 'css/bootstrap.min.css')}}" rel= "stylesheet">
+ <link rel="shortcut icon"  href="{{ url_for('static' , filename= 'favicon.ico')}}" >
+ <span>
+<form action="/upload_csv/" method="POST">
+    <button class="btn btn-primary" type="submit" name= "Send_Email"  value="Send_Email">Upload CSV</button>
+</form>
+<form action="/fill_form/" method="POST">
+    <button class="btn btn-primary" type="submit" name= "Send_Email"  value="Send_Email">Fill Form</button>
+</form>
+</span>
+</div>-

@@ -1,0 +1,20 @@
+<body>
+</br>
+</br>
+ <link href="{{ url_for('static', filename= 'css/bootstrap.min.css')}}" rel= "stylesheet">
+ <link rel="shortcut icon"  href="{{ url_for('static' , filename= 'todo.json')}}" >'
+ </script>
+<form action="/restAPI_calls/" method="POST"  enctype = "multipart/form-data">
+<div class="container">
+ <div class="form-group">
+    <label for="exampleInputFile">File input</label>
+    <p>
+	<input type="file" id="fileInput" name="filename" value="{{request.form.filename}}">
+	</p>
+  </div>
+ </br>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</div>
+
+ </br>
+</body>

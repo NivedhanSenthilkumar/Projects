@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<body>
+</br>
+</br>
+ <link href="{{ url_for('static', filename= 'css/bootstrap.min.css')}}" rel= "stylesheet">
+ <link rel="shortcut icon"  href="{{ url_for('static' , filename= 'favicon.ico')}}" >
+<form action="/prediction_form/" method="POST" class="form-horizontal">
+<div class="container">
+<div class="form-group">
+<input type="text" id="exampleInputFile" class="form-control"  placeholder = "ID"  name="id" value="{{request.form.id}}">
+</div>
+<div class="form-group">
+<input type="text" id="exampleInputFile" class="form-control"  placeholder = "limit_bal" name="limit_bal" value="{{request.form.limit_bal}}">
+
+</div>
+<div class="form-group">
+<input type="text" id="exampleInputFile"  class="form-control" placeholder = "SEX" name="sex" value="{{request.form.sex}}">
+
+</div>
+<div class="form-group">
+
+<input type="text" id="exampleInputFile" class="form-control"  placeholder = "Education" name="education" value="{{request.form.education}}">
+
+</div>
+<div class="form-group">
+
+<input type="text" id="exampleInputFile" class="form-control" placeholder = "Marriage"  name="marriage" value="{{request.form.marriage}}">
+
+</div>
+<div class="form-group">
+
+<input type="text" id="exampleInputFile" class="form-control" placeholder = "AGE"  name="age" value="{{request.form.age}}">
+
+</div>
+<div class="form-group">
+<input type="text" id="exampleInputFile" class="form-control"  placeholder = "PAY_0" name="pay0" value="{{request.form.pay0}}">
+
+</div>
+</br>
+<div class="form-group">
+<input type="text" id="exampleInputFile" class="form-control"  placeholder = "PAY_1" name="pay1" value="{{request.form.pay1}}">
+
+</div>
+<div class="form-group">
+<input type="text" id="exampleInputFile" class="form-control" placeholder = "PAY_2"  name="pay2" value="{{request.form.pay2}}">
+
+</div>
+<div class="form-group">
+l>
+<input type="text" id="exampleInputFile" class="form-control"  placeholder = "PAY_3" name="pay3" value="{{request.form.pay3}}">
+
+</div>
+<div class="form-group">
+
+<input type="text" id="exampleInputFile"  class="form-control" placeholder = "PAY_4"  name="pay4" value="{{request.form.pay4}}">
+
+</div>
+<div class="form-group">
+<input type="text" id="exampleInputFile" class="form-control" placeholder = "PAY_5"  name="pay5" value="{{request.form.pay5}}">
+
+</div>
+<div class="form-group">
+l>
+<input type="text" id="exampleInputFile" class="form-control" placeholder = "PAY_6"  name="pay6" value="{{request.form.pay6}}">
+
+</div>
+<div class="form-group">
+<input type="text" id="exampleInputFile" class="form-control"  placeholder = "BILL_AMT1" name="bill_amt1" value="{{request.form.bill_amt1}}">
+
+</div>
+<div class="form-group">
+<input type="text" id="exampleInputFile" class="form-control"  placeholder = "BILL_AMT2" name="bill_amt2" value="{{request.form.bill_amt2}}">
+
+</div>
+<div class="form-group">
+<input type="text" id="exampleInputFile" class="form-control" placeholder = "BILL_AMT3"  name="bill_amt3" value="{{request.form.bill_amt3}}">
+
+</div>
+<div class="form-group">
+<input type="text" id="exampleInputFile" class="form-control" placeholder = "BILL_AMT4"  name="bill_amt4" value="{{request.form.bill_amt4}}">
+
+</div>
+<div class="form-group">
+<input type="text" id="exampleInputFile" class="form-control" placeholder = "BILL_AMT5"  name="bill_amt5" value="{{request.form.bill_amt5}}">
+
+</div>
+<div class="form-group">
+<input type="text" id="exampleInputFile" class="form-control"  placeholder = "BILL_AMT6" name="bill_amt6" value="{{request.form.bill_amt6}}">
+
+</div>
+<div class="form-group">
+<input type="text" id="exampleInputFile" class="form-control" placeholder = "PAY_AMT1"  name="payment1" value="{{request.form.payment1}}">
+</div>
+<div class="form-group">
+<input type="text" id="exampleInputFile" class="form-control" placeholder = "PAY_AMT2"  name="payment2" value="{{request.form.payment2}}">
+
+</div>
+<div class="form-group">
+<input type="text" id="exampleInputFile" class="form-control" placeholder = "PAY_AMT3"  name="payment3" value="{{request.form.payment3}}">
+
+</div>
+<div class="form-group">
+<input type="text" id="exampleInputFile" class="form-control" placeholder = "PAY_AMT4"  name="payment4" value="{{request.form.payment4}}">
+
+</div>
+<div class="form-group">
+<input type="text" id="exampleInputFile" class="form-control" placeholder = "PAY_AMT5"  name="payment5" value="{{request.form.payment5}}">
+
+</div>
+<!-->
+<div class="form-group">
+<input type="text" id="exampleInputFile" class="form-control" placeholder = "PAY_AMT6"  name="payamt6" value="{{request.form.payamt6}}">
+<button type="submit" class="btn btn-primary">Submit</button>
+</div>
+<-->
+</form>
+</body>
+</html>
