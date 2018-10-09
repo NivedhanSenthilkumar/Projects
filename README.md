@@ -1,5 +1,5 @@
 # Projects
-# 1. Alcohol Addiction Detection and Recovery based Application
+## 1. Alcohol Addiction Detection and Recovery based Application
    - Designed ecosystem-level application in Java to identify harmful patterns of alcohol consumption by using weighted average score.        - Created UI using Java Swing components
    - Generated visualization reports using JFree charts and created back-end database using DB4O
    
@@ -19,6 +19,7 @@
 
 
 # 4. Edgar Dataset Analysis
-   - Generated the required URL using BeautifulSoup for the given year to get log file of the first day of every month and preprocessed the loaded data using Python libraries
-   - Computed summary metrics, automated the pipeline by building Docker image and uploaded it to Amazon S3 bucket
-
+   - Programmatically generated a URL to scrape data for a given year to get log files of the first day of every month using beautifulsoup.
+   - Preprocessed the loaded data and stored clean data in CSV files using Python libraries.
+   - Computed summary metrics, checked for anomalies and removed them.
+   - Dockerized pipeline to automate the task, created log files and uploaded them to Amazon S3 Buckets 
